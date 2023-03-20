@@ -1,0 +1,32 @@
+.put{
+    width: 40%;
+    background-color: rgb(200, 202, 200);
+    border-radius: 6px;
+    border-color: white;
+    border-block: unset;
+    font-family: fantasy;
+}
+table{
+    border-style: solid;
+    border-color: black;
+    border-radius: 4px;
+    font-family: sans-serif;
+    width: 40%;
+    line-break: anywhere;
+}
+h3{
+    color:rgb(100, 141, 141);
+    font-family: cursive;
+
+}
+body{
+    background-color: rgb(157, 162, 162);
+    
+}
+.submit{
+    border-block: unset;
+    border-radius: 8px;
+    color:white;
+    background-color: black;
+    
+}

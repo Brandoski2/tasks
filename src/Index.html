@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/stiles.css">
+</head>
+<body>
+    <h3>Cosas que debo hacer</h3>
+    
+        <input id="taskName" class="put" placeholder="Aqui ponga su tarea vago" type="text">
+        <br>
+        <br>
+        <button id="submit" class="submit" type="submit">Guardar</button>
+    
+    <br>
+    <br>
+        <table>
+            <thead>
+            <tr>
+                <th>Cosas pendientes</th>
+                <th>Cosas hechas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="taskToDoOne"></td>
+                <td onclick="deleteTask(taskToDelete = 0)" id="taskCompletedOne"></td>
+            </tr>
+            <tr>
+                <td id="taskToDoTwo"></td>
+                <td onclick="deleteTask(taskToDelete = 1)" id="taskCompletedTwo"></td>
+            </tr>
+            <tr>
+                <td id="taskToDoThree"></td>
+                <td onclick="deleteTask(taskToDelete = 2)" id="taskCompletedThree"></td>
+            </tr>
+        </tbody>
+    </table>
+
+   <script src="../static/js/logic.js"></script>   
+</body>
+</html>
