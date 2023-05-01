@@ -33,7 +33,7 @@ function addTask() {
 
 form.addEventListener("click", addTask)
 
-function changeText() {
+function changeText(changeText) {
     
     for (let i = 0; i <= tasksCompleted.length; i++) {
         
@@ -43,18 +43,30 @@ function changeText() {
 
             tasksToDo[i].textContent = ""
 
+
             break
 
         }
+
+        
     }
 
 }
 function deleteTask(taskToDelete) {
 
-    tasksCompleted[taskToDelete].textContent = ""
+    if (tasksToDo.textContent = taskName) {
+        tasksToDo[taskToDelete].textContent=""
+        
+    } else {
+        tasksCompleted[taskToDelete].textContent = ""
+    }
+    
     
 }
 
 tasksToDo[0].addEventListener("click", changeText);
 tasksToDo[1].addEventListener("click", changeText);
 tasksToDo[2].addEventListener("click", changeText);
+tasksCompleted[0].addEventListener("click", deleteTask)
+tasksCompleted[1].addEventListener("click", deleteTask)
+tasksCompleted[2].addEventListener("click", deleteTask)
